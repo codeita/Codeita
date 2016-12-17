@@ -1,0 +1,8 @@
+<!-- <pre>{{file|json}}</pre> -->
+<ul class="file-list">
+  <li class="file-list-item" *ngFor="let file of files" [ngClass]="{'toggle-icon':file.isDirectory}">
+    <i class="fa fa-fw" [ngClass]="file.isDirectory?'fa-folder':'fa-file-text-o'"></i>
+    <!-- <i class="icon" [ngClass]="file.isDirectory?'ion-ios-folder':'ion-android-document'"></i> -->
+    {{file.name}}
+  </li>
+</ul>

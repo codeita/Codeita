@@ -1,0 +1,97 @@
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 12px;
+  background-color: #323436;
+  color: #fff;
+  margin: 0;
+}
+
+a {
+  color: #2DD1E0;
+  text-decoration: underline;
+}
+.sidebar {
+  /*background: #101010;*/
+  position: fixed;
+  top:0;
+  left:0;
+  bottom:0;
+  width: 200px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  white-space: nowrap;
+}
+
+::-webkit-scrollbar              { /* 1 */ }
+::-webkit-scrollbar-button       { /* 2 */ }
+::-webkit-scrollbar-track        { /* 3 */ }
+::-webkit-scrollbar-track-piece  { /* 4 */ }
+::-webkit-scrollbar-thumb        { /* 5 */ }
+::-webkit-scrollbar-corner       { /* 6 */ }
+::-webkit-resizer                { /* 7 */ }
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #202020;
+  box-shadow: inset 1px 1px #000;
+  border-radius: 0px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #444;
+    -webkit-box-shadow: 0 0 6px rgba(0,0,0,0.5);
+}
+
+
+.sidebar-nav {
+
+}
+.file-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: block;
+  width: 200px;
+}
+.file-list > .file-list-item {
+  box-sizing: border-box;;
+  padding: 8px 10px 8px 20px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.file-list > .file-list-item.toggle-icon {
+
+}
+.file-list > .file-list-item.toggle-icon:before {
+  font-family: "FontAwesome";
+  content: '\f0da';
+  display: inline-block;
+  position: absolute;
+  margin-left: -1em;
+  width: 1em;
+  text-align: center;
+}
+.file-list > .file-list-item.toggle-icon.open:before {
+  content: '\f0d7';
+}
+.file-list > .file-list-item i {
+  /*font-size: 1.2em;*/
+  width: 18px;
+  display: inline-block;
+  text-align: center;
+
+}
+#editor {
+  width: 800px;
+  height: 200px;
+}

@@ -4,7 +4,7 @@
   "description": "A simple, open source code editor for the average web developer.",
   "main": "app.js",
   "scripts": {
-    "start": "tsc && concurrently \"tsc -w\" \"app\" ",
+    "start": "tsc && concurrently \"tsc -w\" \"node --use_strict app.js\" ",
     "app": "node --strict-mode app.js",
     "tsc": "tsc",
     "tsc:w": "tsc -w",
@@ -25,6 +25,8 @@
     "angular-in-memory-web-api": "^0.2.1",
     "core-js": "^2.4.1",
     "express": "^4.14.0",
+    "hack-font": "^2.0.19",
+    "ionicons": "^3.0.0",
     "reflect-metadata": "^0.1.8",
     "rxjs": "5.0.0-rc.4",
     "sqlite3": "^3.1.8",

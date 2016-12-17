@@ -27,14 +27,16 @@ let app = express();
 
 
 app.use(express.static(`${__dirname}/static`));
-
-app.use('/dist',express.static(`${__dirname}/dist`));
-app.use('/node',express.static(`${__dirname}/node_modules`));
+app.use('/dist', express.static(`${__dirname}/dist`));
+app.use('/node', express.static(`${__dirname}/node_modules`));
 
 //special shortcuts
-//app.use("/ace",express.static(__dirname+"/dist/ace-builds/src-min-noconflict"));
+app.use('/ace', express.static(`${__dirname}/ace-builds/src-min-noconflict`));
 //app.use("/app",express.static(__dirname+"/app"));
 
 app.use('/api/:namespace/:call', require(`${__dirname}/lib/api.js`)({defaults:prefs}));
+app.use("*", function(req,res,next){
+	res.sendFile("index.html", {root:__dirname+"/static"});
+});
 
 app.listen(prefs.http.port);

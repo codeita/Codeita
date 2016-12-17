@@ -6,6 +6,8 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 var core_1 = require("@angular/core");
+var api_service_1 = require("./api.service");
+//import { FileItem } from './file-item';
 var AppComponent = (function () {
     function AppComponent() {
         this.name = 'Codeita';
@@ -15,7 +17,8 @@ var AppComponent = (function () {
 AppComponent = __decorate([
     core_1.Component({
         selector: 'codeita',
-        templateUrl: 'tpl/app.html'
+        templateUrl: 'tpl/app.html',
+        providers: [api_service_1.ApiService]
     })
 ], AppComponent);
 exports.AppComponent = AppComponent;

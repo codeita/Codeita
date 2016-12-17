@@ -14,7 +14,7 @@ var FileList = (function () {
 FileList = __decorate([
     core_1.Component({
         selector: 'file-list',
-        templateUrl: 'static/tpl/file-list.html'
+        templateUrl: 'tpl/file-list.html'
     })
 ], FileList);
 exports.FileList = FileList;
