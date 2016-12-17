@@ -1,0 +1,8 @@
+{
+	"files": {
+		"encoding":"utf8"
+	},
+	"http": {
+		"port": 3130
+	}
+}

@@ -1,0 +1,43 @@
+{
+  "name": "codeita",
+  "version": "0.0.1",
+  "description": "A simple, open source code editor for the average web developer.",
+  "main": "app.js",
+  "scripts": {
+    "start": "tsc && concurrently \"tsc -w\" \"app\" ",
+    "app": "node --strict-mode app.js",
+    "tsc": "tsc",
+    "tsc:w": "tsc -w",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@angular/common": "~2.3.0",
+    "@angular/compiler": "~2.3.0",
+    "@angular/core": "~2.3.0",
+    "@angular/forms": "~2.3.0",
+    "@angular/http": "~2.3.0",
+    "@angular/platform-browser": "~2.3.0",
+    "@angular/platform-browser-dynamic": "~2.3.0",
+    "@angular/router": "~3.3.0",
+    "@angular/upgrade": "~2.3.0",
+    "angular-in-memory-web-api": "^0.2.1",
+    "core-js": "^2.4.1",
+    "express": "^4.14.0",
+    "reflect-metadata": "^0.1.8",
+    "rxjs": "5.0.0-rc.4",
+    "sqlite3": "^3.1.8",
+    "systemjs": "^0.19.40",
+    "tty.js": "^0.2.15",
+    "zone.js": "^0.7.2"
+  },
+  "devDependencies": {
+    "concurrently": "^3.1.0",
+    "grunt": "^1.0.1",
+    "grunt-contrib-clean": "^1.0.0",
+    "request": "^2.79.0",
+    "tar.gz": "^1.0.5",
+    "typescript": "^2.2.0-dev.20161216"
+  }
+}
